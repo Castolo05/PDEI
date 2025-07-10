@@ -419,7 +419,7 @@ async function saveChanges() {
     });
 
     try {
-        const response = await fetch('http://localhost:4000/api/progress', {
+        const response = await fetch('https://plan-estudios-backend.onrender.com', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json'
@@ -449,7 +449,7 @@ async function loadSavedState() {
     if (!token) return; // Usuario no logueado, no carga nada
 
     try {
-        const response = await fetch('http://localhost:4000/api/load', {
+        const response = await fetch('https://plan-estudios-backend.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
