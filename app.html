@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planes de Estudio - Facultad de Ciencias Económicas</title>
   <link rel="icon" href="media/icono.ico" type="image/x-icon">
+  <script>
+    const token = localStorage.getItem("token");
+    if (!token) {
+      window.location.href = "login.html";
+    }
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 
 </head>
 <body>
